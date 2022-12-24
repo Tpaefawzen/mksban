@@ -1,0 +1,42 @@
+################################################################################
+#
+# Copyright 2022 ro_qu_na
+# Copyright 2022 Tpaefawzen
+#
+# This file is part of mksban.
+#
+# mksban is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# mksban is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with mksban.  If not, see <https://www.gnu.org/licenses/>.
+#
+################################################################################
+#
+# Script
+# For your video.
+#
+################################################################################
+#
+# Begin with "#" for comment
+# syntax: TIMESTAMP TEXT
+#         separate by [[:blank:]]s
+#
+# To include 0x20 to TEXT, replace them with "_"
+# To include 0x09 to TEXT, replace them with "\t"
+# To include "\" to TEXT, replace them with "\\"
+# To include "_" to TEXT, replace them with "\_"
+# 
+0	本日は、この動画に、
+1	この動画は、アップロード者が削除したため、
+2.2	ああああああ。
+4.138	if_test_-f_something;then_asdf;_fi;*;''&"'"&"'.
+5	 	 	 	 	R\teadDaaaUtTT**+*+*+:;:;/..;/..:@:/.[]\\/;
+6	[[[][^^-0||~=^9('&%$"!"WEDFTYH\_\_

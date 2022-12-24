@@ -1,0 +1,51 @@
+################################################################################
+#
+# Copyright 2022 ro_qu_na
+# Copyright 2022 Tpaefawzen
+#
+# This file is part of mksban.
+#
+# mksban is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# mksban is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with mksban.  If not, see <https://www.gnu.org/licenses/>.
+#
+################################################################################
+#
+# CONFIG.shlib
+#
+################################################################################
+
+# Change the font to what you prefer
+readonly ImageMagick_command_header='convert -channel RGBA -background black -fill white -gravity south -font IPAGothic pango:'
+
+# Change the format for image file. Should be with alnums and periods.
+readonly ImageMagick_command_get_filename_awkcode='sprintf("t%06d.png",NR)'
+
+# Change point size of font
+readonly ImageMagick_pointsize_definition_awkcode='
+	pointsize["kana"]=20
+	pointsize["kanji"]=24
+'
+readonly ImageMagick_command_interval_awkcode='"<span size=\"" pointsize[label] "pt\">" text "</span>"'
+
+# Should not be changed well
+readonly ImageMagick_command_footer_awkcode='" " filename'
+
+# In seconds
+readonly scrollDuration='7.25'
+
+# File name
+readonly TARGET_VIDEO=HELLO.WEBM
+
+# See make-scrolls for details. This is what for background.
+# Video resolution and rate and length of video can be changed
+readonly LAVFI_OPTION="color=color=black:size=vga:duration=10:rate=15"

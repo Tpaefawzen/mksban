@@ -1,0 +1,34 @@
+# mksban
+*mksban* is a set of tools to make a simple video specialized for text-only video.
+
+# Dependencies
+- POSIX-compatible shell
+- grep
+- GAWK: to do codepoint comparisation, such as `c<="あ"`
+- ImageMagick: to generate titles.
+- FFmpeg: to generate a video.
+
+# Usage
+1. Edit the file `Script`.
+2. Edit the file `CONFIG.shlib`.
+3. Run `mksbantitleimgs.sh`.
+4. Run `mksbanscroll.sh`.
+
+NOTE that 3. and 4. should be done while the locale is in UTF-8.
+
+# Authors
+ro_qu_na, Tpaefawzen
+
+# License
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
